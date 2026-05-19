@@ -11,46 +11,28 @@
 - Twitter: <https://x.com/pridiuksson>  
 
 ## My Single Main Key Message:
-* Agents and humans exist together and collaborate in a way it makes sense
+* Humans and agents should exist together in the same environment and collaborate in unique ways it makes sense
 
-## Case 1 - QAtech: Two PR Review Systems: Code Review Agent vs E2E QA.tech Agent
+## 1 - QAtech:
+* Humans-first, agents-augmented
+* Code Review Agent + E2E QA.tech Agent in CI
+* Slack -> Linear -> Cursor -> PR -> Code Review + E2E review -> Main -> Live
 
-| Dimension          | Does the code look well?                       | Does the product actually work?                                 |
-| ------------------ | ---------------------------------------------- | --------------------------------------------------------------- |
-| **Review type**    | Structural (is it safe/correct?)               | Behavioral (does it work?)                                      |
-| **Primary input**  | PR diffs + full codebase + architecture        | PR metadata + diffs + deployments                               |
-| **Code access**    | Diffs + grep + file reads + architecture index | Diffs (patches), PR description, commits — no full repo or grep |
-| **Test execution** | No                                             | Yes — runs E2E on PR preview                                    |
-| **Runs where**     | Cursor IDE, GitHub Actions, Cursor Cloud       | QA.tech SaaS (Inngest)                                          |
-| **Trigger**        | GitHub mention, Automation, Command            | Deployment webhook, `@QA.tech` mention                          |
+## 2 - Project Q: 
+* Agents-first system, humans make all key decisions
+* Agents plan, implement, test, maintain tech specs
+* Plan -> Peer Reviw/Grill -> Execute -> Test/Test New -> Validate -> Commit -> Create PR -> Review
 
-### Code Review Agent
+## 3 - Project P:
+* Assign tasks to humans or agents and back
+* Agents learn work from humans
+* Agents decide on the process
 
-Is in fact a PR review skill that runs in Cursor CLI using Composer-2 (or IDE using a /command) and gives the model an operating system for review:
+# Before you ask:
+<img width="1048" height="518" alt="image" src="https://github.com/user-attachments/assets/f2b003b8-0e68-4200-b4fb-bb2c85a99a39" />
 
-- A way to classify the shape of the pull request before spending context.
-- A scratchpad so the agent externalizes state instead of relying on short-term memory.
-- A domain map so changed files route to relevant architecture and checklist knowledge.
-- A bounded tool strategy so grep, diff summarization, and helper agents do not flood the main reasoning context.
-- A publication contract so the final GitHub review is consistent, sparse, and merge-focused.
+<img width="404" height="248" alt="image" src="https://github.com/user-attachments/assets/ec9c5e20-69ea-4643-8ab7-278fb5b3dd20" />
 
-The skill is optimized around one question: **is there anything in this PR that should block merge?**
+<img width="773" height="712" alt="image" src="https://github.com/user-attachments/assets/d0c9978b-4141-461a-b349-f718106e5bb7" />
 
-```mermaid
-flowchart LR
-    Request[PR review request] --> Skill[Review skill]
-    Skill --> Policy[Review policy]
-    Skill --> Procedure[Step-by-step procedure]
-    Skill --> References[Architecture and checklist references]
-    Skill --> Tools[Diff, grep, API, helper agents]
-
-    Policy --> Agent[AI reviewer]
-    Procedure --> Agent
-    References --> Agent
-    Tools --> Agent
-
-    Agent --> Review[GitHub review]
-    Review --> Inline[Inline blockers]
-    Review --> Summary[Scope, verified checks, observations]
-```
 
