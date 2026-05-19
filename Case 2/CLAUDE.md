@@ -2,15 +2,15 @@
 
 Follow this sequence for every non-trivial change:
 
-1. **Plan** — `.claude/skills/plan/SKILL.md` — Research → vertical slices → ship gate per phase
-1. **Grill** *(if high-stakes or external deps)* — `.claude/skills/grill/SKILL.md` — Adversarial research, web-verified claims
-1. **Peer review** *(instead of human feedback)* — `.claude/skills/peer-review/SKILL.md` — Gut check from a different LLM
+1. **Plan** — [`.claude/skills/plan/SKILL.md`](.claude/skills/plan/SKILL.md) — Research → vertical slices → ship gate per phase
+1. **Grill** *(if high-stakes or external deps)* — [`.claude/skills/grill/SKILL.md`](.claude/skills/grill/SKILL.md) — Adversarial research, web-verified claims
+1. **Peer review** *(instead of human feedback)* — [`.claude/skills/peer-review/SKILL.md`](.claude/skills/peer-review/SKILL.md) — Gut check from a different LLM
 1. **Test** — `.claude/skills/test/SKILL.md` — Auto-selects suite from changed files, triages failures (never vitest)
 1. **Write new tests** *(for new exports)* — `.claude/skills/test-new/SKILL.md` — Create tests following project patterns
 1. **Review** — `.claude/skills/review/SKILL.md` — Code review checklist, updates finding registry
 1. **Update knowledge** — Update affected `Knowledge/*.md`; fix what slowed you down
-1. **Commit** — `.claude/skills/commit/SKILL.md` — Structured commits (never `git commit` directly)
-1. **Create PR** — `.claude/skills/create-pr/SKILL.md` — Branch + PR, runs verify gate
+1. **Commit** — [`.claude/skills/commit/SKILL.md`](.claude/skills/commit/SKILL.md) — Structured commits (never `git commit` directly)
+1. **Create PR** — [`.claude/skills/create-pr/SKILL.md`](.claude/skills/create-pr/SKILL.md) — Branch + PR, runs verify gate
 
 ---
 

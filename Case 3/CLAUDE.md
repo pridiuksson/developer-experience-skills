@@ -3,9 +3,9 @@
 Follow this sequence for every non-trivial change:
 
 **Grill** *(if high-stakes or external deps)* — `.claude/skills/grill/SKILL.md` — Adversarial research, web-verified claims
-**Peer review** *(quick gut check)* — `.claude/skills/peer-review/SKILL.md` — Second opinion from a different LLM
-**Ticket** *(backlog management)* — `.claude/skills/ticket/SKILL.md` — Create agent-ready tickets with peer review
-**Work** *(ticket execution)* — `.claude/skills/work/SKILL.md` — Execute a ticket end-to-end: verify, implement, peer-review, complete
+**Peer review** *(quick gut check)* — [`.claude/skills/peer-review/SKILL.md`](.claude/skills/peer-review/SKILL.md) — Second opinion from a different LLM
+**Ticket** *(backlog management)* — [`.claude/skills/ticket/SKILL.md`](.claude/skills/ticket/SKILL.md) — Create agent-ready tickets with peer review
+**Work** *(ticket execution)* — [`.claude/skills/work/SKILL.md`](.claude/skills/work/SKILL.md) — Execute a ticket end-to-end: verify, implement, peer-review, complete
 **Commit** — `.claude/skills/commit/SKILL.md` — Structured commits (never `git commit` directly)
 **Create PR** — `.claude/skills/create-pr/SKILL.md` — Branch + PR without checkout
 
