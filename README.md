@@ -35,4 +35,6 @@
 
 <img width="773" height="712" alt="image" src="https://github.com/user-attachments/assets/d0c9978b-4141-461a-b349-f718106e5bb7" />
 
+# A random meme from the internet
+<img width="800" height="707" alt="image" src="https://github.com/user-attachments/assets/c34d1dbd-9a52-4e0a-90dc-65f806230e36" />
 
