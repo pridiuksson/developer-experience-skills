@@ -21,7 +21,7 @@
 ## [2 - Project Q](Case%202/) 
 * Agents-first system, humans make all key decisions
 * Agents plan, implement, test, maintain tech specs
-* Plan -> Peer Reviw/Grill -> Execute -> Test/Test New -> Validate -> Commit -> Create PR -> Review
+* Plan -> Peer Reveiw/Grill -> Execute -> Test/Test New -> Validate -> Commit -> Create PR -> Review
 
 ## [3 - Project P](Case%203/)
 * Assign tasks to humans or agents and back
